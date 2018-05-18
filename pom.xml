@@ -177,6 +177,14 @@
 			<version>1.9.2</version>
 		</dependency>-->
 		<!-- end 配置文件加密 -->
+		<!-- start netty -->
+		<!-- https://mvnrepository.com/artifact/io.netty/netty-all -->
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-all</artifactId>
+			<version>4.1.24.Final</version>
+		</dependency>
+		<!-- end netty -->
 	</dependencies>
 
 
