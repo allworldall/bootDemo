@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.bootdemo.dao.daoInterface.AccountDao">
+
+    <select id="getAccount" resultType="com.example.bootdemo.pojo.po.SysAccountPO">
+        SELECT open_id openId, app_id appId, full_name fullName, sex, telephone_num telephoneNum, level
+        FROM sys_account
+        WHERE open_id = #{openId} AND app_id = #{appId}
+    </select>
+
+    <insert id="insertAccount">
+        INSERT INTO sys_account
+           (open_id, app_id, full_name, sex, telephone_num, create_time)
+        VALUES
+           (#{openId}, #{appId}, #{fullName}, #{sex}, #{telephoneNum}, now())
+    </insert>
+
+    <update id="updateAccount">
+        UPDATE sys_account
+          SET full_name = #{fullName},sex = #{sex}, telephone_num = #{telephoneNum}, update_time = now()
+        WHERE  open_id = #{openId} AND app_id = #{appId}
+    </update>
+</mapper>

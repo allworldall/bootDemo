@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.bootdemo.dao.daoInterface.ConfigDao">
+    <select id="getConfigValue" resultType="String">
+        SELECT property_value FROM sys_config_info
+        WHERE property_key = #{configKey} AND status = 1
+    </select>
+</mapper>

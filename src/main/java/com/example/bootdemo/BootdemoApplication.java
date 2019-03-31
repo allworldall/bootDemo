@@ -24,6 +24,7 @@ public class BootdemoApplication {
 
 	public static void main(String[] args) {
 
+		// 新增注释
 		String direct = System.getenv("BOOT_DEMO");
 		//初始化log4j
 		String log4jPath = direct + File.separator + "log4j.properties";
