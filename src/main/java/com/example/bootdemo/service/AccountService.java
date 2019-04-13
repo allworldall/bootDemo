@@ -16,12 +16,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-//@Service
+@Service
 public class AccountService {
     @Autowired
     AccountDao accountDao;
 
-    @Autowired
+//    @Autowired
     JedisClientPool jedisClientPool;
 
     public ResponseVO getAccount(QueryAccountDTO query, String remoteIP) {

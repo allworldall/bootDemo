@@ -3,6 +3,8 @@ package com.example.bootdemo.controller;
 import com.example.bootdemo.pojo.vo.Md5VO;
 import com.example.bootdemo.service.SignService;
 import com.example.bootdemo.utils.DataFormatUtils.StringUtils;
+import com.example.bootdemo.utils.function.concurrent.ConcurrentParams;
+import com.example.bootdemo.utils.function.concurrent.LimitControllerAnnotation;
 import com.example.bootdemo.utils.log.LoggerUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -11,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+@LimitControllerAnnotation(SignController.class)
 @Controller
 @RequestMapping(value = "sign")
 public class SignController extends BaseController {
@@ -24,6 +27,7 @@ public class SignController extends BaseController {
      * @param response
      * @param request
      */
+    @ConcurrentParams(timer = 5, count = 3)
     @RequestMapping(value = "md5")
     public void md5(String param, HttpServletResponse response, HttpServletRequest request) {
         String result = "";
@@ -45,6 +49,7 @@ public class SignController extends BaseController {
      * @param response
      * @param request
      */
+    @ConcurrentParams(timer = 5, count = 3)
     @RequestMapping(value = "getRSAPairKey")
     public void getPubAndPriKey(HttpServletResponse response, HttpServletRequest request){
         String result = "";

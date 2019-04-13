@@ -15,7 +15,7 @@ import redis.clients.jedis.JedisCluster;
  *
  */
 //@Component
-//@Profile("redisCluster")
+@Profile("redisCluster")
 public class JedisClientCluster implements JedisClient {
 
     @Autowired

@@ -46,6 +46,15 @@ public final class DateUtil {
 		return sf.format(date);
 	}
 
+	/**
+	 * 将Date转换成特定的字符串格式  年月日
+	 * @param date
+	 * @return
+	 */
+	public static long getTimeLong(Date date) {
+		SimpleDateFormat sf = new SimpleDateFormat("yyyyMMdd");
+		return Long.valueOf(sf.format(date));
+	}
 
 	/**
 	 * 得到目标时间前days天

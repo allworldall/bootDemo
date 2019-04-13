@@ -1,6 +1,5 @@
 package com.example.bootdemo.pojo.vo;
 
-import com.example.bootdemo.pojo.po.SysAccountPO;
 import com.example.bootdemo.utils.constant.SysCodeConstant;
 import com.example.bootdemo.utils.constant.SysStringConstant;
 
