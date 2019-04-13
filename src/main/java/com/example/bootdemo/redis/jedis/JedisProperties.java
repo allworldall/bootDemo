@@ -12,8 +12,8 @@ import org.springframework.context.annotation.Configuration;
  * @author dell xps15
  *
  */
-@Configuration
-@ConfigurationProperties(prefix = "jedis")
+//@Configuration
+//@ConfigurationProperties(prefix = "jedis")
 public class JedisProperties {
 
     @Value("${jedis.host}")

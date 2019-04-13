@@ -13,7 +13,7 @@ import redis.clients.jedis.HostAndPort;
 import redis.clients.jedis.JedisCluster;
 import redis.clients.jedis.JedisPool;
 
-@Configuration
+//@Configuration
 public class JedisConfiguration {
 
     @Autowired

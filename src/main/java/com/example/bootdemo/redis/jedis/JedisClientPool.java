@@ -12,7 +12,7 @@ import redis.clients.jedis.JedisPool;
  *
  *jedis操作方法
  */
-@Component
+//@Component
 public class JedisClientPool implements JedisClient {
 
     @Autowired

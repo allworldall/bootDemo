@@ -14,8 +14,8 @@ import redis.clients.jedis.JedisCluster;
  * @author dell xps15
  *
  */
-@Component
-@Profile("redisCluster")
+//@Component
+//@Profile("redisCluster")
 public class JedisClientCluster implements JedisClient {
 
     @Autowired
