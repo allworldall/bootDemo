@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 //@Controller
-//@RequestMapping("/account")
+@RequestMapping("/account")
 public class AccountController extends BaseController{
 
     @Autowired
