@@ -18,8 +18,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@Controller
-@RequestMapping("/account")
+//@Controller
+//@RequestMapping("/account")
 public class AccountController extends BaseController{
 
     @Autowired
