@@ -16,13 +16,13 @@ import org.springframework.context.annotation.Configuration;
 //@ConfigurationProperties(prefix = "jedis")
 public class JedisProperties {
 
-    @Value("${jedis.host}")
+//    @Value("${jedis.host}")
     private String host;
-    @Value("${jedis.port}")
+//    @Value("${jedis.port}")
     private int port=6379;
-    @Value("${jedis.password}")
+//    @Value("${jedis.password}")
     private String password;
-    @Value("${jedis.max.timeout}")
+//    @Value("${jedis.max.timeout}")
     private int timeout;
 
     private boolean ssl = false;
