@@ -21,7 +21,7 @@ import java.util.List;
 @RequestMapping(value = "ssq", produces = {"text/html;charset=UTF-8"})
 public class SsqController extends BaseController {
 
-    @ConcurrentParams(timer = 10, count = 3)
+    @ConcurrentParams(timer = 10, count = 10)
     @RequestMapping("randomBall")
     public void getRandomBall(Integer init, HttpServletResponse response, HttpServletRequest request) {
         boolean flush = false;
